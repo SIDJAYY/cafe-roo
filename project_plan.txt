@@ -1,0 +1,48 @@
+====================================================================
+CAFE ROO - PREMIUM ROOFTOP SPECIALTY COFFEE & LOUNGE WEBSITE PLAN
+====================================================================
+
+Overview:
+Build a premium, modern single-page web application for CAFE ROO utilizing authentic cafe photo assets (public/home/background.jpg, public/logo/mainlogo.jpg, public/gallery/p1.jpg - p9.jpg) and high-quality online food/drink images for menu items.
+
+Core Stack:
+- HTML5 (Semantic Structure & Accessibility)
+- CSS3 (Custom Properties, Glassmorphism, CSS Grid/Flexbox, Animations)
+- Vanilla JavaScript ES6 (Modular State, Interactive Cart, Modal System, Lightbox, Reservation System)
+
+Key Sections & Components:
+1. Navigation & Header:
+   - Cafe logo (public/logo/mainlogo.jpg)
+   - Links to Menu, Vibe/Story, Gallery, Reservation, Location
+   - Cart counter button with live badge count
+
+2. Hero Section:
+   - High-impact background (public/home/background.jpg)
+   - Sage green & gold typography
+   - Operating hours live badge ("Open Today until 11:00 PM")
+   - Action buttons ("Explore Menu", "Reserve Table", "Order Online")
+
+3. Interactive Specialty Menu:
+   - Filter categories: Espresso Bar, Rooftop Signatures, Cold Brews, Artisanal Pastries, Savory Bites
+   - Search bar & dietary tags (Vegan, Gluten-Free)
+   - Online image fallback URLs (high quality Unsplash images for menu items)
+   - "Customize & Add" modal (Milk choices, sweetness, size, extra espresso shots)
+
+4. Authentic Photo Gallery:
+   - Responsive grid displaying all 9 real cafe images (public/gallery/p1.jpg through p9.jpg)
+   - Lightbox modal with image switching, captions, and close actions
+   - Gallery category filter tags (All, Rooftop Lounge, Drinks, Ambiance)
+
+5. Table Reservation System:
+   - Interactive booking form (Date, Time, Guests, Seating preference: Rooftop Terrace vs Lounge)
+   - Real-time form validation and instant reservation summary modal
+
+6. Slide-Over Cart Drawer & Checkout:
+   - Live order list with quantity controls and customized option details
+   - Subtotal, tax calculation, tip selection (10%, 15%, 20%)
+   - Simulated interactive checkout completion flow
+
+7. Brand Vibe & Location / Contact:
+   - Coffee story & roasting craftsmanship highlight
+   - Hours, location, contact form, map directions shortcut
+====================================================================

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAFE ROO</title>
+  <meta name="description"
+    content="Experience elevated rooftop coffee culture at CAFE ROO. Artisanal espresso, rooftop signature drinks, fresh baked pastries & breathtaking lounge vibes.">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="public/logo/circle.png">
+  <link rel="shortcut icon" type="image/png" href="public/logo/circle.png">
+  <link rel="apple-touch-icon" href="public/logo/circle.png">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="main-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo">
+        <img src="public/logo/mainlogo.jpg" alt="CAFE ROO Logo" class="logo-img">
+        <span>CAFE ROO</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">Rooftop Vibe</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reservation" class="nav-link">Reserve Table</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#location" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#reservation" class="btn btn-primary" style="display: none; display: md-inline-flex;">Book Table</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open Today: 11:00 AM – 10:00 PM</span>
+        </div>
+        <h1 class="hero-title">Elevated Coffee <span>& Rooftop Serenity</span></h1>
+        <p class="hero-desc">
+          Immerse your senses at CAFE ROO. Exceptional artisanal roasts, signature botanical drinks, and warm sage
+          aesthetics perched high above the bustling cityscape.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary"><i class="fas fa-mug-hot"></i> Explore Menu</a>
+          <a href="https://rb.gy/w0wbe8" target="_blank" class="btn btn-accent"><i class="fas fa-motorcycle"></i> Order
+            on GrabFood</a>
+          <a href="#reservation" class="btn btn-outline"><i class="fas fa-calendar-check"></i> Reserve Table</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>Est. 2022</h4>
+            <p>Premium Rooftop Lounge</p>
+          </div>
+          <div class="stat-item">
+            <h4>30K+</h4>
+            <p>Facebook Followers</p>
+          </div>
+          <div class="stat-item">
+            <h4>4.5 ★</h4>
+            <p>Customer Rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FLOATING GLASSMORTIC PILL FEATURE BAR
+       ========================================================================== -->
+  <div class="container">
+    <div class="glass-pill-bar">
+      <div class="glass-pill-item">
+        <div class="pill-icon-box"><i class="fas fa-seedling"></i></div>
+        <div class="pill-text-box">
+          <h4>Ethical Sourcing</h4>
+          <p>Direct-trade Arabica</p>
+        </div>
+      </div>
+      <div class="pill-divider"></div>
+      <div class="glass-pill-item">
+        <div class="pill-icon-box"><i class="fas fa-cloud-sun"></i></div>
+        <div class="pill-text-box">
+          <h4>Open-Air Terrace</h4>
+          <p>Panoramic skyline view</p>
+        </div>
+      </div>
+      <div class="pill-divider"></div>
+      <div class="glass-pill-item">
+        <div class="pill-icon-box"><i class="fas fa-bread-slice"></i></div>
+        <div class="pill-text-box">
+          <h4>Artisanal Bakery</h4>
+          <p>Baked fresh daily</p>
+        </div>
+      </div>
+      <div class="pill-divider"></div>
+      <div class="glass-pill-item">
+        <div class="pill-icon-box"><i class="fas fa-wifi"></i></div>
+        <div class="pill-text-box">
+          <h4>Work & Chill Space</h4>
+          <p>High-speed Fiber Wi-Fi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       INTERACTIVE MENU SECTION
+       ========================================================================== -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Crafted With Passion</span>
+        <h2 class="section-title">Artisanal Coffee & Delicacies</h2>
+        <p class="section-subtitle">Discover our hand-roasted espresso beverages, signature rooftop creations, cold
+          brews, and freshly baked savory pastries.</p>
+      </div>
+
+      <div class="menu-controls">
+        <div class="menu-search">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="menu-search-input" placeholder="Search coffee, pastries, matcha, bites...">
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="all">All Items</button>
+          <button class="tab-btn" data-category="signatures">Rooftop Signatures</button>
+          <button class="tab-btn" data-category="coffee">Coffee & Espresso</button>
+          <button class="tab-btn" data-category="frappes">Frappes & Shakes</button>
+          <button class="tab-btn" data-category="breakfast">All Day Breakfast</button>
+          <button class="tab-btn" data-category="pizza">Pizza & Pasta</button>
+          <button class="tab-btn" data-category="mains">Mains & Platters</button>
+          <button class="tab-btn" data-category="barchow">Bar Chow & Starters</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid populated dynamically by JS -->
+      <div class="menu-grid" id="menu-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & VIBE STORY SECTION
+       ========================================================================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images-stack">
+          <img src="public/gallery/p1.jpg" alt="Rooftop Atmosphere" class="about-img-main">
+          <img src="public/gallery/p5.jpg" alt="Sage Tile Neon Wall" class="about-img-sub">
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">The ROO Experience</span>
+          <h2 class="section-title">Where Specialty Coffee Meets Sky High Relaxation</h2>
+          <p class="about-text">
+            CAFE ROO was created as a sanctuary above the noise. Blending soothing sage green tiles, warm timber tables,
+            lush greenery, and open-air rooftop views, we offer an inviting haven for coffee connoisseurs, creative
+            minds, and casual afternoon catch-ups.
+          </p>
+
+          <ul class="about-features-list">
+            <li><i class="fas fa-check-circle check-icon"></i> Micro-lot single origin beans</li>
+            <li><i class="fas fa-check-circle check-icon"></i> Signature barista creations</li>
+            <li><i class="fas fa-check-circle check-icon"></i> Plant-based milk choices</li>
+            <li><i class="fas fa-check-circle check-icon"></i> Pet-friendly rooftop terrace</li>
+          </ul>
+
+          <a href="#reservation" class="btn btn-accent"><i class="fas fa-couch"></i> Book Your Terrace Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AUTHENTIC PHOTO GALLERY SHOWCASE
+       ========================================================================== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Visual Journey</span>
+        <h2 class="section-title">Authentic Cafe Gallery</h2>
+        <p class="section-subtitle">Take a glimpse inside CAFE ROO. Real moments, sunlit corners, signature pours, and
+          night-time rooftop vibes.</p>
+      </div>
+
+      <div class="category-tabs" style="margin-bottom: 2.5rem;">
+        <button class="tab-btn gallery-tab-btn active" data-gallery-filter="all">All Photos</button>
+        <button class="tab-btn gallery-tab-btn" data-gallery-filter="lounge">Lounge & Decor</button>
+        <button class="tab-btn gallery-tab-btn" data-gallery-filter="coffee">Coffee Craft</button>
+        <button class="tab-btn gallery-tab-btn" data-gallery-filter="views">Rooftop Views</button>
+      </div>
+
+      <!-- Gallery Grid populated dynamically by JS using public/gallery/p1.jpg - p9.jpg -->
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TABLE RESERVATION SYSTEM
+       ========================================================================== -->
+  <section class="section reservation-section" id="reservation">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Guarantee Your Spot</span>
+        <h2 class="section-title">Reserve A Table</h2>
+        <p class="section-subtitle">Planning a date, coffee meeting, or sunset drinks? Book your preferred rooftop or
+          indoor lounge table in advance.</p>
+      </div>
+
+      <div class="reservation-card">
+        <form id="reservation-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="res-name"><i class="fas fa-user"></i> Full Name</label>
+              <input type="text" id="res-name" class="form-control" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="res-email"><i class="fas fa-envelope"></i> Email Address</label>
+              <input type="email" id="res-email" class="form-control" placeholder="alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="res-date"><i class="fas fa-calendar-alt"></i> Date</label>
+              <input type="date" id="res-date" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="res-time"><i class="fas fa-clock"></i> Preferred Time</label>
+              <select id="res-time" class="form-control" required>
+                <option value="">Select Time Slot</option>
+                <option value="08:30 AM">08:30 AM - Morning Coffee</option>
+                <option value="11:00 AM">11:00 AM - Brunch Slot</option>
+                <option value="02:30 PM">02:30 PM - Afternoon Tea</option>
+                <option value="05:30 PM">05:30 PM - Sunset Golden Hour</option>
+                <option value="08:00 PM">08:00 PM - Rooftop Evening Lounge</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="res-guests"><i class="fas fa-users"></i> Guests</label>
+              <select id="res-guests" class="form-control" required>
+                <option value="1">1 Person (Solo Work/Chill)</option>
+                <option value="2" selected>2 Persons (Duo / Date)</option>
+                <option value="4">4 Persons (Small Group)</option>
+                <option value="6">6+ Persons (Party Celebration)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="res-area"><i class="fas fa-chair"></i> Seating Preference</label>
+              <select id="res-area" class="form-control" required>
+                <option value="Rooftop Outdoor Terrace">Rooftop Outdoor Terrace (Skyline View)</option>
+                <option value="Indoor Sage Lounge">Indoor Sage Lounge (AC & Sofa)</option>
+                <option value="Window Espresso Bar">Window Espresso Bar</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="res-notes"><i class="fas fa-comment-alt"></i> Special Requests (Optional)</label>
+              <textarea id="res-notes" class="form-control" rows="3"
+                placeholder="Birthday celebration, high chair needed, dietary allergies, etc."></textarea>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 1.5rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem;">
+              <i class="fas fa-paper-plane"></i> Confirm Table Reservation
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOMER REVIEWS SECTION
+       ========================================================================== -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">What Guests Say</span>
+        <h2 class="section-title">Real Reviews</h2>
+        <p class="section-subtitle">Hear straight from our guests — real experiences from real people who've visited
+          CAFE ROO.</p>
+      </div>
+
+      <div class="reviews-overall">
+        <div class="reviews-score">
+          <span class="score-number">4.5</span>
+          <div class="score-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>Based on Google Reviews</p>
+        </div>
+        <div class="reviews-breakdown">
+          <div class="breakdown-row"><span>5 ★</span>
+            <div class="breakdown-bar">
+              <div style="width: 80%;"></div>
+            </div><span>80%</span>
+          </div>
+          <div class="breakdown-row"><span>4 ★</span>
+            <div class="breakdown-bar">
+              <div style="width: 15%;"></div>
+            </div><span>15%</span>
+          </div>
+          <div class="breakdown-row"><span>3 ★</span>
+            <div class="breakdown-bar">
+              <div style="width: 5%;"></div>
+            </div><span>5%</span>
+          </div>
+          <div class="breakdown-row"><span>2 ★</span>
+            <div class="breakdown-bar">
+              <div style="width: 0%;"></div>
+            </div><span>0%</span>
+          </div>
+          <div class="breakdown-row"><span>1 ★</span>
+            <div class="breakdown-bar">
+              <div style="width: 0%;"></div>
+            </div><span>0%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">F</div>
+            <div>
+              <h4 class="reviewer-name">Francis Goes Places</h4>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+          <p class="review-text">"An absolute gem in Timog! Cafe Roo has such a cozy and aesthetic vibe—perfect for
+            catching up with friends or just relaxing. What we loved most was that the drinks aren't overly sweet. The
+            real flavors actually burst through. But the real star of the show was the <strong>matcha tiramisu</strong>.
+            It's incredibly amazing—soft, creamy, and has just the right amount of matcha punch!"</p>
+          <div class="review-highlight"><i class="fas fa-quote-left"></i> Highly recommend this place if you're looking
+            for great quality treats and a beautiful space!</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <h4 class="reviewer-name">Adam Mazon</h4>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+          <p class="review-text">"Aesthetic vibes, good service, and the absolute BEST sea salt latte! Seriously, if you
+            haven't tried their <strong>sea salt latte</strong> yet, you are missing out. It's the perfect blend of
+            creamy, sweet, and salty. The staff are super accommodating — everything fast even when it gets busy. Def my
+            new favorite hangout spot in Tomas Morato! 🙌"</p>
+          <div class="review-highlight"><i class="fas fa-quote-left"></i> Thanks Ate Melanie for the GOOD SERVICE! 💚
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">B</div>
+            <div>
+              <h4 class="reviewer-name">Beatrice Alberto</h4>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+          <p class="review-text">"Tried the <strong>dirty choco latte, iced einspanner</strong> and pepperoni pizza —
+            they didn't disappoint! The pizza is bussin' 🤤 I enjoyed the cheese pull! The coffee is great too — they
+            have good baristas. The staff were accommodating and they have flexible payment methods (Card, Cash and QR).
+            Plenty of parking space around the area too!"</p>
+          <div class="review-highlight"><i class="fas fa-quote-left"></i> Overall experience was great!</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <h4 class="reviewer-name">Mikayla Rosal (Kai)</h4>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+          <p class="review-text">"Love their <strong>beef burgers!</strong> The patty is huge and juicy, the buns are
+            perfectly toasted, and the veggies are fresh. The fries were long, thick, and perfectly crispy. The great
+            quality of the food is something I didn't expect from a café. The unli wifi is pretty strong too for remote
+            work. Would definitely come back for their pastries and food!"</p>
+          <div class="review-highlight"><i class="fas fa-quote-left"></i> Great quality food — way beyond what you'd
+            expect from a café!</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">D</div>
+            <div>
+              <h4 class="reviewer-name">Diane</h4>
+              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+          <p class="review-text">"Tried this café late at night thinking it would be quiet — but wow, it was the
+            complete opposite! The place was still super busy and packed even past midnight 😅 Every table was full,
+            people were still coming in. It definitely says a lot about how <strong>popular the café is</strong>."</p>
+          <div class="review-highlight"><i class="fas fa-quote-left"></i> Tip: come earlier if you want a seat, or be
+            ready to wait!</div>
+        </div>
+
+        <div class="review-card review-card--cta">
+          <div class="review-cta-inner">
+            <i class="fab fa-google review-cta-icon"></i>
+            <h4>Enjoyed your visit?</h4>
+            <p>Share your CAFE ROO experience and help others discover the rooftop!</p>
+            <a href="https://www.facebook.com/caferooph" target="_blank" class="btn btn-accent"
+              style="margin-top: 1rem;">
+              <i class="fab fa-facebook-f"></i> Leave a Review
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCATION & CONTACT SECTION
+       ========================================================================== -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Visit Us</span>
+        <h2 class="section-title">Hours & Location</h2>
+        <p class="section-subtitle">Come visit CAFE ROO for your daily espresso fix or relaxation above the city
+          skyline in Malate, Manila.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="info-box">
+          <div>
+            <h3
+              style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--clr-accent-gold); margin-bottom: 2rem;">
+              CAFE ROO Rooftop Lounge
+            </h3>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-content">
+                <h4>Address</h4>
+                <p>465 Remedios St, Malate, Manila, 1000 Metro Manila</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div class="info-content">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 11:00 AM - 10:00 PM<br>Sat - Sun: 9:00 AM - 8:00 PM</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-content">
+                <h4>Contact & Inquiries</h4>
+                <p>Phone: 0917 700 1456<br>Email: caferooph@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="https://www.google.com/maps/place/465+Remedios+St,+Malate,+Manila,+1000+Metro+Manila/@14.5696462,120.9844427,17z/data=!3m1!4b1!4m6!3m5!1s0x3397ca2b2699bb07:0xa5b83db801da8d78!8m2!3d14.5696462!4d120.9844427!16s%2Fg%2F11q2ngz697"
+              target="_blank" class="btn btn-outline" style="width: 100%;">
+              <i class="fas fa-directions"></i> Open in Google Maps
+            </a>
+            <a href="https://rb.gy/w0wbe8" target="_blank" class="btn btn-accent" style="width: 100%;">
+              <i class="fas fa-motorcycle"></i> Order Online via GrabFood
+            </a>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8617!2d120.9818!3d14.5696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2b2699bb07%3A0xa5b83db801da8d78!2s465%20Remedios%20St%2C%20Malate%2C%20Manila%2C%201000%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1693560000000!5m2!1sen!2sph"
+            loading="lazy" title="CAFE ROO Map Location Malate Manila" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" style="color: var(--clr-white);">
+            <img src="public/logo/mainlogo.jpg" alt="Logo" class="logo-img">
+            <span>CAFE ROO</span>
+          </a>
+          <p>Elevating daily coffee rituals through specialty beans, peaceful rooftop lounge design, and warm
+            hospitality since 2022.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/caferooph" target="_blank" class="social-btn"
+              aria-label="Facebook (30k Followers)"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/caferooph/" target="_blank" class="social-btn" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://linktr.ee/caferooph" target="_blank" class="social-btn" aria-label="Linktree"><i
+                class="fas fa-link"></i></a>
+            <a href="https://rb.gy/w0wbe8" target="_blank" class="social-btn" aria-label="GrabFood"><i
+                class="fas fa-motorcycle"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Food & Drinks Menu</a></li>
+            <li><a href="#about">Rooftop Story</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="https://linktr.ee/caferooph" target="_blank">Linktree Profile</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Contact & Location</h4>
+          <ul class="footer-menu">
+            <li><i class="fas fa-map-marker-alt" style="color: var(--clr-accent-gold);"></i> 465 Remedios St, Malate,
+              Manila</li>
+            <li><i class="fas fa-phone-alt" style="color: var(--clr-accent-gold);"></i> 0917 700 1456</li>
+            <li><i class="fas fa-envelope" style="color: var(--clr-accent-gold);"></i> caferooph@gmail.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Order Online</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Craving CAFE ROO at home?
+            Get your rooftop favorites delivered straight to your door via GrabFood.</p>
+          <a href="https://rb.gy/w0wbe8" target="_blank" class="btn btn-accent"
+            style="width: 100%; font-size: 0.85rem; padding: 0.75rem;">
+            <i class="fas fa-motorcycle"></i> Order via GrabFood
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 CAFE ROO - Premium Rooftop Lounge (Est. 2022). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MENU ITEM DETAILS SHOWCASE MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="item-details-modal">
+    <div class="modal-card">
+      <div class="modal-body">
+        <button class="modal-close" id="details-modal-close-btn">&times;</button>
+
+        <div class="modal-img-header">
+          <img id="details-item-img" src="" alt="Menu Item">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem;">
+          <h3 class="modal-title" id="details-item-title">Item Name</h3>
+          <span style="font-size: 1.4rem; font-weight: 700; color: var(--clr-accent-timber);"
+            id="details-item-price">$0.00</span>
+        </div>
+
+        <p id="details-item-desc"
+          style="color: var(--clr-gray-800); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;"></p>
+
+        <div class="option-group">
+          <div class="option-title"><i class="fas fa-leaf" style="color: var(--clr-primary);"></i> Highlights &
+            Ingredients</div>
+          <div id="details-item-highlights" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+        </div>
+
+        <div
+          style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--clr-gray-200); display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.85rem; color: var(--clr-gray-500);"><i class="fas fa-clock"></i> Served Daily at
+            Rooftop Lounge</span>
+          <a href="#reservation" class="btn btn-primary" onclick="closeDetailsModal()"
+            style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">
+            <i class="fas fa-calendar-check"></i> Reserve Table to Enjoy
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PHOTO LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="lightbox-card">
+      <button class="modal-close" id="lightbox-close-btn" style="background: rgba(255,255,255,0.8);">&times;</button>
+
+      <div class="lightbox-content">
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev-btn" aria-label="Previous Photo">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Authentic Cafe Photo">
+        <div id="lightbox-caption" class="lightbox-caption">Photo Caption</div>
+
+        <button class="lightbox-nav lightbox-next" id="lightbox-next-btn" aria-label="Next Photo">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
