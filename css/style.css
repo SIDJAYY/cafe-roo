@@ -367,7 +367,8 @@ button {
   background-position: center;
   background-attachment: fixed;
   color: var(--clr-white);
-  padding-top: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 6.5rem;
 }
 
 .hero-content {
@@ -436,8 +437,8 @@ button {
 .hero-stats {
   display: flex;
   gap: 2.5rem;
-  margin-top: 3.5rem;
-  padding-top: 2rem;
+  margin-top: 2.2rem;
+  padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -456,14 +457,15 @@ button {
 
 /* --- Floating Glassmorphic Pill Feature Bar --- */
 .glass-pill-bar {
-  background: rgba(26, 36, 33, 0.88);
+  background: rgba(26, 36, 33, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(224, 169, 109, 0.25);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(224, 169, 109, 0.3);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
   border-radius: var(--radius-full);
   padding: 1.25rem 2.5rem;
-  margin-top: -3.5rem;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 20;
   display: flex;
