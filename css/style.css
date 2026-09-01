@@ -718,12 +718,10 @@ button {
   line-height: 1.4;
   margin-bottom: 0.75rem;
   overflow: hidden;
-  /* stylelint-disable */
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  /* noinspection CssUnknownProperty */
+  line-clamp: 2;
   -webkit-box-orient: vertical;
-  /* stylelint-enable */
 }
 
 .card-notes-action {
@@ -920,19 +918,23 @@ button {
 
 /* --- Reservation Section --- */
 .reservation-section {
-  background-image: linear-gradient(rgba(247, 245, 240, 0.94), rgba(247, 245, 240, 0.94)), url('../public/home/background.jpg');
+  background-image: linear-gradient(rgba(247, 245, 240, 0.96), rgba(247, 245, 240, 0.96)), url('../public/home/background.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .reservation-card {
   background: var(--clr-white);
   border-radius: var(--radius-lg);
   padding: 3.5rem;
-  box-shadow: var(--shadow-lg);
-  max-width: 900px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  max-width: 860px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
-  border: 1px solid var(--clr-gray-200);
+  border: 1px solid rgba(74, 124, 109, 0.18);
+  overflow: hidden;
 }
 
 .form-grid {
@@ -940,12 +942,17 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .form-group.full-width {
@@ -953,24 +960,57 @@ button {
 }
 
 .form-group label {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--clr-primary-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.form-group label i {
+  color: var(--clr-accent-gold);
+  font-size: 1rem;
+  width: 16px;
+  text-align: center;
 }
 
 .form-control {
-  padding: 0.85rem 1.1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.9rem 1.15rem;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--clr-gray-200);
+  border: 1.5px solid var(--clr-gray-300);
   outline: none;
-  background: var(--clr-gray-100);
+  background: #fdfbf7;
+  color: var(--clr-dark);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
   transition: var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select.form-control {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234A7C6D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.1rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
 }
 
 .form-control:focus {
   border-color: var(--clr-primary);
   background: var(--clr-white);
-  box-shadow: 0 0 0 3px rgba(74, 124, 109, 0.15);
+  box-shadow: 0 0 0 4px rgba(74, 124, 109, 0.18);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 95px;
 }
 
 /* --- Location & Hours Section --- */
@@ -1873,11 +1913,19 @@ html, body {
   }
 
   .reservation-card {
-    padding: 1.5rem 1.25rem;
+    padding: 1.75rem 1.15rem;
+    border-radius: var(--radius-md);
   }
 
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 1.15rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .reservation-card .btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem !important;
   }
 
   .lightbox-prev { left: 10px; }
